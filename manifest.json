@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "X.com Ad Remover",
+    "version": "1.0",
+    "description": "Removes recommended ads from X.com",
+    "permissions": [
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://x.com/*",
+      "https://twitter.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://x.com/*",
+          "https://twitter.com/*"
+        ],
+        "js": ["content.js"]
+      }
+    ]
+  }
